@@ -49,299 +49,299 @@ $degrade-h2-mas: linear-gradient(
   text-decoration: none;
 }
 
-@media screen and (max-width: 600px) {
-  .txt-pc {
-    display: none;
-  }
+//@media screen and (max-width: 600px) {
+.txt-pc {
+  display: none;
+}
 
-  a {
-    text-decoration: none;
-    color: white;
-    padding: 2px;
-  }
+a {
+  text-decoration: none;
+  color: white;
+  padding: 2px;
+}
 
-  a:active {
-    text-decoration: underline;
-  }
+a:active {
+  text-decoration: underline;
+}
 
-  header {
-    padding: 5px;
-    margin: auto;
-    margin-top: 20px;
-    height: 400px;
-    width: 90vw;
-  }
+header {
+  padding: 5px;
+  margin: auto;
+  margin-top: 20px;
+  height: 400px;
+  width: 90vw;
+}
 
-  .box-header {
-    border-radius: 50px;
-    padding: 5px;
-    height: 40px;
-    font-size: 0.75em;
-    font-family: $fonte-cards;
+.box-header {
+  border-radius: 50px;
+  padding: 5px;
+  height: 40px;
+  font-size: 0.75em;
+  font-family: $fonte-cards;
+  background-image: $degrade-titulos;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+.info-header {
+  h1 {
     background-image: $degrade-titulos;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    text-align: center;
+    font-family: $fonte-principal;
+    font-weight: 700;
+    font-size: 2.5em;
+    padding-top: 40px;
+    line-height: 90%;
+  }
+  h2 {
+    font-family: $fonte-principal;
+    font-weight: 400;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .btn-header {
+    padding-top: 20px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-  }
-
-  .info-header {
-    h1 {
-      background-image: $degrade-titulos;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      display: inline-block;
-      text-align: center;
-      font-family: $fonte-principal;
-      font-weight: 700;
-      font-size: 2.5em;
-      padding-top: 40px;
-      line-height: 90%;
-    }
-    h2 {
-      font-family: $fonte-principal;
-      font-weight: 400;
-      font-size: 1.5em;
-      text-align: center;
-      padding-top: 10px;
-    }
-    .btn-header {
-      padding-top: 20px;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-evenly;
-      .btn-escuro {
-        height: 50px;
-        border-radius: 10px;
-        padding: 10px;
-        color: white;
-        font-family: $fonte-principal;
-        text-align: center;
-        align-content: center;
-        background-color: $botao-escuro;
-      }
-      .btn-escuro:active,
-      .btn-claro:active {
-        background-color: $botao-click;
-        color: white;
-        transition-duration: 0.02s;
-      }
-      .btn-claro {
-        height: 50px;
-        border-radius: 10px;
-        padding: 10px;
-        color: $botao-escuro;
-        border: 1px solid $botao-escuro;
-        font-family: $fonte-principal;
-        text-align: center;
-        align-content: center;
-        background-color: $botao-claro;
-      }
-    }
-  }
-
-  #importancia {
-    background-color: $background-gray;
-    padding: 15px 0px 60px 0px;
-    .cards-importancia {
-      width: 90vw;
-      margin: auto;
-      margin-top: 40px;
-      display: flex;
-      flex-flow: row wrap;
-      gap: 20px;
-      background-color: $background-gray;
-      h2 {
-        font-size: 1.5em;
-        font-family: $fonte-principal;
-        font-weight: 700;
-        text-align: center;
-        background-image: $degrade-h2-importancia;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        display: inline-block;
-      }
-      p {
-        font-size: 0.8em;
-        font-family: $fonte-principal;
-        font-weight: 400;
-        text-align: center;
-      }
-      .card-quadrado {
-        box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.137);
-        border-radius: 10px;
-        text-align: center;
-        font-family: $fonte-principal;
-        width: 75vw;
-        height: 180px;
-        margin: auto;
-        background-color: white;
-        img {
-          padding: 10px 0px 0px 0px;
-        }
-        h3 {
-          font-weight: 600;
-          padding: 0px 5px 25px 5px;
-        }
-        p {
-          font-weight: 400;
-          font-size: 1.1em;
-          padding: 5px;
-        }
-      }
-    }
-  }
-
-  #fem {
-    background-color: $background-rosa;
-    padding: 50px 0px;
-    text-align: center;
-    h2 {
-      font-family: $fonte-principal;
-      font-weight: 700;
-      font-size: 1.8em;
-      background-image: $degrade-h2-fem;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      display: inline-block;
-      margin-bottom: 50px;
-    }
-  }
-  #mas {
-    background-color: white;
-    padding: 50px 0px;
-    text-align: center;
-    h2 {
-      font-family: $fonte-principal;
-      font-weight: 700;
-      font-size: 1.8em;
-      background-image: $degrade-h2-mas;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      display: inline-block;
-      margin-bottom: 50px;
-    }
-  }
-  .card-prevencao {
-    margin: auto;
-    margin-bottom: 20px;
-    padding: 15px;
-    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.137);
-    border-radius: 10px;
-    height: 400px;
-    background-color: white;
-    width: 70vw;
-
-    h3 {
-      font-family: $fonte-cards;
-      font-weight: 700;
-      padding-top: 10px;
-    }
-    ul {
-      font-family: $fonte-cards;
-      font-weight: 400;
-      font-size: 0.8em;
-      text-align: start;
+    .btn-escuro {
+      height: 50px;
+      border-radius: 10px;
       padding: 10px;
-      li {
-        padding-top: 10px;
-      }
+      color: white;
+      font-family: $fonte-principal;
+      text-align: center;
+      align-content: center;
+      background-color: $botao-escuro;
+    }
+    .btn-escuro:active,
+    .btn-claro:active {
+      background-color: $botao-click;
+      color: white;
+      transition-duration: 0.02s;
+    }
+    .btn-claro {
+      height: 50px;
+      border-radius: 10px;
+      padding: 10px;
+      color: $botao-escuro;
+      border: 1px solid $botao-escuro;
+      font-family: $fonte-principal;
+      text-align: center;
+      align-content: center;
+      background-color: $botao-claro;
     }
   }
+}
 
-  .alertas {
-    background-color: white;
-    text-align: center;
+#importancia {
+  background-color: $background-gray;
+  padding: 15px 0px 60px 0px;
+  .cards-importancia {
+    width: 90vw;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    background-color: $background-gray;
     h2 {
+      font-size: 1.5em;
       font-family: $fonte-principal;
       font-weight: 700;
-      font-size: 1.5em;
+      text-align: center;
       background-image: $degrade-h2-importancia;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       display: inline-block;
-      margin-bottom: 50px;
-    }
-    .card-alerta {
-      border: 1px solid black;
-      border-radius: 10px;
-      padding: 10px;
-      width: 90vw;
-      margin: auto;
-      margin-bottom: 20px;
-      height: 150px;
-      font-family: $fonte-cards;
-      display: flex;
-      flex-flow: row wrap;
-      align-items: center;
-      justify-items: center;
-      gap: 10px;
-      img {
-        flex-shrink: 0;
-        flex-grow: 0;
-      }
-      h3 {
-        flex-shrink: 0;
-      }
-      p {
-        font-size: 1em;
-      }
-    }
-    #autoexame-fem {
-      background-color: $background-autoexame-fem;
-      color: $letra-fem;
-    }
-    #autoexame-mas {
-      background-color: $background-autoexame-mas;
-      color: $letra-mas;
-    }
-    #vacina {
-      background-color: $background-vacina;
-      color: $letra-vacina;
-    }
-
-    #mental {
-      background-color: $background-mental;
-      color: $letra-mental;
-    }
-  }
-
-  footer {
-    background-color: $background-footer;
-    text-align: center;
-    font-family: $fonte-footer;
-    color: white;
-    padding-top: 30px;
-    img {
-      padding-bottom: 20px;
-    }
-    h3 {
-      font-size: 1em;
-      padding-bottom: 5px;
-    }
-    .links {
-      padding-bottom: 10px;
     }
     p {
-      padding: 0px 30px 30px 30px;
-      font-weight: 400;
       font-size: 0.8em;
-    }
-    .copy {
-      font-size: 0.9em;
+      font-family: $fonte-principal;
       font-weight: 400;
-      text-align: justify;
-      padding: 15px 40px;
-      border-top: 1px solid white;
+      text-align: center;
     }
-    ul {
-      list-style-type: none;
-      font-size: 0.8em;
-      padding-bottom: 20px;
-      a:active {
-        text-decoration: underline;
+    .card-quadrado {
+      box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.137);
+      border-radius: 10px;
+      text-align: center;
+      font-family: $fonte-principal;
+      width: 75vw;
+      height: 180px;
+      margin: auto;
+      background-color: white;
+      img {
+        padding: 10px 0px 0px 0px;
+      }
+      h3 {
+        font-weight: 600;
+        padding: 0px 5px 25px 5px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 1.1em;
+        padding: 5px;
       }
     }
   }
 }
+
+#fem {
+  background-color: $background-rosa;
+  padding: 50px 0px;
+  text-align: center;
+  h2 {
+    font-family: $fonte-principal;
+    font-weight: 700;
+    font-size: 1.8em;
+    background-image: $degrade-h2-fem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+}
+#mas {
+  background-color: white;
+  padding: 50px 0px;
+  text-align: center;
+  h2 {
+    font-family: $fonte-principal;
+    font-weight: 700;
+    font-size: 1.8em;
+    background-image: $degrade-h2-mas;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+}
+.card-prevencao {
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.137);
+  border-radius: 10px;
+  height: 400px;
+  background-color: white;
+  width: 70vw;
+
+  h3 {
+    font-family: $fonte-cards;
+    font-weight: 700;
+    padding-top: 10px;
+  }
+  ul {
+    font-family: $fonte-cards;
+    font-weight: 400;
+    font-size: 0.8em;
+    text-align: start;
+    padding: 10px;
+    li {
+      padding-top: 10px;
+    }
+  }
+}
+
+.alertas {
+  background-color: white;
+  text-align: center;
+  h2 {
+    font-family: $fonte-principal;
+    font-weight: 700;
+    font-size: 1.5em;
+    background-image: $degrade-h2-importancia;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+  .card-alerta {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 20px;
+    height: 150px;
+    font-family: $fonte-cards;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    img {
+      flex-shrink: 0;
+      flex-grow: 0;
+    }
+    h3 {
+      flex-shrink: 0;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+  #autoexame-fem {
+    background-color: $background-autoexame-fem;
+    color: $letra-fem;
+  }
+  #autoexame-mas {
+    background-color: $background-autoexame-mas;
+    color: $letra-mas;
+  }
+  #vacina {
+    background-color: $background-vacina;
+    color: $letra-vacina;
+  }
+
+  #mental {
+    background-color: $background-mental;
+    color: $letra-mental;
+  }
+}
+
+footer {
+  background-color: $background-footer;
+  text-align: center;
+  font-family: $fonte-footer;
+  color: white;
+  padding-top: 30px;
+  img {
+    padding-bottom: 20px;
+  }
+  h3 {
+    font-size: 1em;
+    padding-bottom: 5px;
+  }
+  .links {
+    padding-bottom: 10px;
+  }
+  p {
+    padding: 0px 30px 30px 30px;
+    font-weight: 400;
+    font-size: 0.8em;
+  }
+  .copy {
+    font-size: 0.9em;
+    font-weight: 400;
+    text-align: justify;
+    padding: 15px 40px;
+    border-top: 1px solid white;
+  }
+  ul {
+    list-style-type: none;
+    font-size: 0.8em;
+    padding-bottom: 20px;
+    a:active {
+      text-decoration: underline;
+    }
+  }
+}
+//}
