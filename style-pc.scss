@@ -53,10 +53,6 @@ $degrade-h2-mas: linear-gradient(
   display: none;
 }
 
-body {
-  background-color: $background-footer;
-}
-
 a {
   text-decoration: none;
   color: white;
@@ -215,14 +211,38 @@ header {
     font-family: $fonte-principal;
     font-weight: 700;
     font-size: 2.2em;
+    margin: auto;
     background-image: $degrade-h2-fem;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
     margin-bottom: 50px;
   }
+}
+
+.container {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 70vw;
+  margin: auto;
+}
+
+#mas {
+  background-color: $background-gray;
+  padding: 50px 0px;
+  text-align: center;
+  h2 {
+    font-family: $fonte-principal;
+    font-weight: 700;
+    font-size: 1.8em;
+    background-image: $degrade-h2-mas;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-bottom: 50px;
+  }
 }
 
 .card-prevencao {
@@ -233,6 +253,8 @@ header {
   height: 400px;
   background-color: white;
   width: 250px;
+  flex-shrink: 0;
+  flex-grow: 0;
 
   h3 {
     font-family: $fonte-cards;
@@ -247,6 +269,121 @@ header {
     padding: 10px;
     li {
       padding-top: 10px;
+    }
+  }
+}
+
+.alertas {
+  background-color: white;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: center;
+  h2 {
+    font-family: $fonte-principal;
+    font-weight: 700;
+    padding-top: 50px;
+    width: 900px;
+    font-size: 2em;
+    background-image: $degrade-h2-importancia;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+  .card-alerta {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 350px;
+    margin: auto;
+    margin-bottom: 20px;
+    height: 150px;
+    font-family: $fonte-cards;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    img {
+      flex-shrink: 0;
+      flex-grow: 0;
+    }
+    h3 {
+      flex-shrink: 0;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+  #autoexame-fem {
+    background-color: $background-autoexame-fem;
+    color: $letra-fem;
+  }
+  #autoexame-mas {
+    background-color: $background-autoexame-mas;
+    color: $letra-mas;
+  }
+  #vacina {
+    background-color: $background-vacina;
+    color: $letra-vacina;
+  }
+
+  #mental {
+    background-color: $background-mental;
+    color: $letra-mental;
+  }
+}
+
+.copy {
+  background-color: $background-footer;
+  font-size: 0.9em;
+  font-weight: 400;
+  text-align: justify;
+  padding: 15px 40px;
+  border-top: 1px solid white;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  background-color: $background-footer;
+  text-align: start;
+  height: 300px;
+  padding: 60px;
+  font-family: $fonte-footer;
+  color: white;
+  padding-top: 30px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  img {
+    padding-bottom: 20px;
+    max-width: 200px;
+  }
+  h3 {
+    font-size: 1em;
+    padding-bottom: 5px;
+  }
+  .links {
+    padding-bottom: 10px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 0.8em;
+    padding-bottom: 50px;
+  }
+  ul {
+    list-style-type: none;
+    font-size: 0.8em;
+    padding-bottom: 20px;
+    a:active {
+      text-decoration: underline;
     }
   }
 }

@@ -10,10 +10,6 @@
   display: none;
 }
 
-body {
-  background-color: #313461;
-}
-
 a {
   text-decoration: none;
   color: white;
@@ -168,14 +164,38 @@ header {
   background-color: #fdefef;
   padding: 50px 0px;
   text-align: center;
-  display: flex;
-  flex-flow: row wrap;
 }
 #fem h2 {
   font-family: inter;
   font-weight: 700;
   font-size: 2.2em;
+  margin: auto;
   background-image: linear-gradient(to right, rgba(249, 1, 111, 0.5411764706) 10%, rgba(147, 8, 133, 0.6196078431) 62%, rgba(208, 56, 170, 0.7529411765) 75%, #851c87);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 70vw;
+  margin: auto;
+}
+
+#mas {
+  background-color: #f8f9fa;
+  padding: 50px 0px;
+  text-align: center;
+}
+#mas h2 {
+  font-family: inter;
+  font-weight: 700;
+  font-size: 1.8em;
+  background-image: linear-gradient(to right, #3373d2, #6f95c7, #7bb5f5, #0074ee, #5ea7ef);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -190,6 +210,8 @@ header {
   height: 400px;
   background-color: white;
   width: 250px;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 .card-prevencao h3 {
   font-family: roboto;
@@ -205,4 +227,118 @@ header {
 }
 .card-prevencao ul li {
   padding-top: 10px;
+}
+
+.alertas {
+  background-color: white;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: center;
+}
+.alertas h2 {
+  font-family: inter;
+  font-weight: 700;
+  padding-top: 50px;
+  width: 900px;
+  font-size: 2em;
+  background-image: linear-gradient(to left, #33cc73, #1173d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+.alertas .card-alerta {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 350px;
+  margin: auto;
+  margin-bottom: 20px;
+  height: 150px;
+  font-family: roboto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+}
+.alertas .card-alerta img {
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.alertas .card-alerta h3 {
+  flex-shrink: 0;
+}
+.alertas .card-alerta p {
+  font-size: 1em;
+}
+.alertas #autoexame-fem {
+  background-color: #f9d5e5;
+  color: #ad346a;
+}
+.alertas #autoexame-mas {
+  background-color: #cfe2f3;
+  color: #2769a3;
+}
+.alertas #vacina {
+  background-color: #d4edda;
+  color: #244a2d;
+}
+.alertas #mental {
+  background-color: #ffe9c2;
+  color: #976c00;
+}
+
+.copy {
+  background-color: #313461;
+  font-size: 0.9em;
+  font-weight: 400;
+  text-align: justify;
+  padding: 15px 40px;
+  border-top: 1px solid white;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  background-color: #313461;
+  text-align: start;
+  height: 300px;
+  padding: 60px;
+  font-family: poppins;
+  color: white;
+  padding-top: 30px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+footer img {
+  padding-bottom: 20px;
+  max-width: 200px;
+}
+footer h3 {
+  font-size: 1em;
+  padding-bottom: 5px;
+}
+footer .links {
+  padding-bottom: 10px;
+}
+footer p {
+  font-weight: 400;
+  font-size: 0.8em;
+  padding-bottom: 50px;
+}
+footer ul {
+  list-style-type: none;
+  font-size: 0.8em;
+  padding-bottom: 20px;
+}
+footer ul a:active {
+  text-decoration: underline;
 }/*# sourceMappingURL=style-pc.css.map */
