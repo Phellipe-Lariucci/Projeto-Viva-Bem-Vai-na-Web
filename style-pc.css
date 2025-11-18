@@ -28,7 +28,9 @@ header {
   padding: 40px;
   margin: auto;
   height: 80vh;
+  background-color: white;
   background-image: url(imagens/bannerHeader.png);
+  background-position: center right;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -82,7 +84,7 @@ header {
   height: 40px;
   border-radius: 10px;
   padding: 10px;
-  width: 200px;
+  max-width: 200px;
   color: white;
   font-family: inter;
   text-align: center;
@@ -97,6 +99,7 @@ header {
 }
 .info-header .btn-header .btn-claro {
   height: 40px;
+  max-width: 200px;
   border-radius: 10px;
   padding: 10px;
   color: #1173d4;
@@ -105,4 +108,101 @@ header {
   text-align: center;
   align-content: center;
   background-color: #f9fafb;
+}
+
+#importancia {
+  background-color: #f8f9fa;
+  padding: 15px 0px 60px 0px;
+}
+#importancia .cards-importancia {
+  width: 70vw;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 15px;
+  background-color: #f8f9fa;
+}
+#importancia .cards-importancia h2 {
+  font-size: 2em;
+  font-family: inter;
+  font-weight: 700;
+  margin: auto;
+  text-align: center;
+  background-image: linear-gradient(to left, #33cc73, #1173d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+#importancia .cards-importancia p {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  font-family: inter;
+  font-weight: 400;
+  text-align: center;
+}
+#importancia .cards-importancia .card-quadrado {
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.137);
+  border-radius: 10px;
+  text-align: center;
+  font-family: inter;
+  width: 250px;
+  height: 180px;
+  margin: auto;
+  background-color: white;
+}
+#importancia .cards-importancia .card-quadrado img {
+  padding: 10px 0px 0px 0px;
+}
+#importancia .cards-importancia .card-quadrado h3 {
+  font-weight: 600;
+  padding: 0px 5px 25px 5px;
+}
+#importancia .cards-importancia .card-quadrado p {
+  font-weight: 400;
+  font-size: 1.1em;
+  padding: 5px;
+}
+
+#fem {
+  background-color: #fdefef;
+  padding: 50px 0px;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+#fem h2 {
+  font-family: inter;
+  font-weight: 700;
+  font-size: 2.2em;
+  background-image: linear-gradient(to right, rgba(249, 1, 111, 0.5411764706) 10%, rgba(147, 8, 133, 0.6196078431) 62%, rgba(208, 56, 170, 0.7529411765) 75%, #851c87);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.card-prevencao {
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.137);
+  border-radius: 10px;
+  height: 400px;
+  background-color: white;
+  width: 250px;
+}
+.card-prevencao h3 {
+  font-family: roboto;
+  font-weight: 700;
+  padding-top: 10px;
+}
+.card-prevencao ul {
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 0.8em;
+  text-align: start;
+  padding: 10px;
+}
+.card-prevencao ul li {
+  padding-top: 10px;
 }/*# sourceMappingURL=style-pc.css.map */

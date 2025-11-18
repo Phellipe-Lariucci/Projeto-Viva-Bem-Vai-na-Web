@@ -71,7 +71,9 @@ header {
   padding: 40px;
   margin: auto;
   height: 80vh;
+  background-color: white;
   background-image: url(imagens/bannerHeader.png);
+  background-position: center right;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -123,7 +125,7 @@ header {
       height: 40px;
       border-radius: 10px;
       padding: 10px;
-      width: 200px;
+      max-width: 200px;
       color: white;
       font-family: $fonte-principal;
       text-align: center;
@@ -138,6 +140,7 @@ header {
     }
     .btn-claro {
       height: 40px;
+      max-width: 200px;
       border-radius: 10px;
       padding: 10px;
       color: $botao-escuro;
@@ -146,6 +149,104 @@ header {
       text-align: center;
       align-content: center;
       background-color: $botao-claro;
+    }
+  }
+}
+
+#importancia {
+  background-color: $background-gray;
+  padding: 15px 0px 60px 0px;
+  .cards-importancia {
+    width: 70vw;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+    background-color: $background-gray;
+    h2 {
+      font-size: 2em;
+      font-family: $fonte-principal;
+      font-weight: 700;
+      margin: auto;
+      text-align: center;
+      background-image: $degrade-h2-importancia;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+      font-family: $fonte-principal;
+      font-weight: 400;
+      text-align: center;
+    }
+    .card-quadrado {
+      box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.137);
+      border-radius: 10px;
+      text-align: center;
+      font-family: $fonte-principal;
+      width: 250px;
+      height: 180px;
+      margin: auto;
+      background-color: white;
+      img {
+        padding: 10px 0px 0px 0px;
+      }
+      h3 {
+        font-weight: 600;
+        padding: 0px 5px 25px 5px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 1.1em;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+#fem {
+  background-color: $background-rosa;
+  padding: 50px 0px;
+  text-align: center;
+  h2 {
+    font-family: $fonte-principal;
+    font-weight: 700;
+    font-size: 2.2em;
+    background-image: $degrade-h2-fem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card-prevencao {
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.137);
+  border-radius: 10px;
+  height: 400px;
+  background-color: white;
+  width: 250px;
+
+  h3 {
+    font-family: $fonte-cards;
+    font-weight: 700;
+    padding-top: 10px;
+  }
+  ul {
+    font-family: $fonte-cards;
+    font-weight: 400;
+    font-size: 0.8em;
+    text-align: start;
+    padding: 10px;
+    li {
+      padding-top: 10px;
     }
   }
 }
